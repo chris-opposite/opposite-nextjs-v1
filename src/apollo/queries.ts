@@ -12,6 +12,8 @@ export const HOME_QUERY = gql`
           title
           subtitle
           hero {
+            hash
+            ext
             url
           }
         }
@@ -26,6 +28,8 @@ export const HOME_QUERY = gql`
             subtitle
           }
           image {
+            hash
+            ext
             url
             width
             height
@@ -33,6 +37,8 @@ export const HOME_QUERY = gql`
         }
       }
       video {
+        hash
+        ext
         url
       }
       about
@@ -63,6 +69,8 @@ export const PORTFOLIO_QUERY = gql`
           title
           subtitle
           thumbnail {
+            hash
+            ext
             url
           }
         }
@@ -98,6 +106,8 @@ export const PROJECT_QUERY = gql`
       title
       subtitle
       hero {
+        hash
+        ext
         url
       }
       content
@@ -107,6 +117,8 @@ export const PROJECT_QUERY = gql`
           size
           media {
             name
+            hash
+            ext
             url
             width
             height
@@ -117,12 +129,16 @@ export const PROJECT_QUERY = gql`
           id
           left {
             name
+            hash
+            ext
             url
             width
             height
           }
           right {
             name
+            hash
+            ext
             url
             width
             height

@@ -5,7 +5,7 @@ const Image = ({ image, alt, width, height }) => {
   return (
     <div className='flex'>
       <NextImage
-        src={image.url}
+        src={`https://opposite.imgix.net/${image.hash}${image.ext}`}
         alt={alt}
         objectFit='cover'
         objectPosition='center center'
